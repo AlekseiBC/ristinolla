@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ristinolla"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="450">
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button Name="btn0" Click="Button_Click"/>
+        <Button Name="btn1" Grid.Column="1" Click="btn1_Click"/>
+        <Button Name="btn2" Grid.Column="2" Click="btn2_Click"/>
+        <Button Name="btn3" Grid.Row="1" Click="btn3_Click"/>
+        <Button Name="btn4" Grid.Row="1" Grid.Column="1" Click="btn4_Click"/>
+        <Button Name="btn5" Grid.Row="1" Grid.Column="2" Click="btn5_Click"/>
+        <Button Name="btn6" Grid.Row="2" Click="btn6_Click"/>
+        <Button Name="btn7" Grid.Row="2" Grid.Column="1" Click="btn7_Click"/>
+        <Button Name="btn8" Grid.Row="2" Grid.Column="2" Click="btn8_Click"/>
+        
     </Grid>
 </Window>
